@@ -45,8 +45,6 @@ if(isset($_POST['login']))// hangt van login knop af
             $_SESSION['Voornaam'] = $row['Firstname'];
             $_SESSION['Achernaam'] = $row['Lastname'];
             $_SESSION['Geboortedatum'] = $row['DateOfBirth'];
-            
-            
           
         
            
