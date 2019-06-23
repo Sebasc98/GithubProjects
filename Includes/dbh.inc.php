@@ -1,4 +1,6 @@
 <?php
+// SCRIPT WERKT 100%
+// De script is nodig om verbinding te maken met de database. 
 
 $servername ="localhost";
 $dBUsername = "root";

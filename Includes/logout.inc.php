@@ -1,8 +1,15 @@
 <?php
-session_start();
-session_unset();
-session_destroy();
+// SCRIPT WERKT 99.9%
+//Script voor de uitlogknop
+if(isset($_POST['Uitloggen']))
+{
+    session_start();
+    session_unset();
+    session_destroy();
 
-header("Location: ../index.php");
-// voor testen: header("Location: ../fakeindex.php");
-?>
+    header("Location: ../index.php");
+    
+}
+else {
+    // doorverwijzen naar pagina waar gebruiker vandaan kwam (geen idee hoe dat moet)
+}
