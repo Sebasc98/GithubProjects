@@ -37,11 +37,19 @@ if(isset($_POST['login']))// hangt van login knop af
             if($wachtwoord !== $row['Wachtwoord']){
             header("Location: ../inlog.php?error=verkeerdewachtwoord");
             exit();
-           }//ww goed
+           }//ww is goed alle informatie die nodig is 
            elseif($wachtwoord == $row['Wachtwoord']){
-            
+            // alle userinfo 
             $_SESSION['UserID'] = $row['Userid'];
             $_SESSION['Username'] = $row['Username'];
+            $_SESSION['Voornaam'] = $row['Firstname'];
+            $_SESSION['Achernaam'] = $row['Lastname'];
+            $_SESSION['Geboortedatum'] = $row['DateOfBirth'];
+            
+            
+          
+        
+           
 
             header('Location: ../fakedashboardclient.php');
            }

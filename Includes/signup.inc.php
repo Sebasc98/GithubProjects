@@ -4,7 +4,7 @@ if(isset($_POST['activatiecode-submit']))
 {
     require 'dbh.inc.php';
     $activationcode = number_format($_POST['activationcode']);
-    // check of leeg is (werkt)
+    // check of leeg is of verkeerde datatype(werkt)
 
     if (empty($activationcode))
     {
@@ -39,9 +39,8 @@ if(isset($_POST['activatiecode-submit']))
             elseif($activationcode == $row['Code']){
                 
                 $_SESSION['activationcode'] = $row['Code'];
-               
-
                 header('Location: ../Accountmaken.php');
+                exit();
             }
             else{
                 header('Location: ../inlogmaken.php?error=verkeerdecode');
@@ -93,7 +92,7 @@ elseif(isset($_POST['signup-sumbit'])) // hangt van de naam van submit af.
             mysqli_stmt_store_result($stmt);
             $resultCheck = mysqli_stmt_num_rows($stmt);
             if($resultCheck>0){
-                header("Location: ../registreer.php?error=usernametaken");
+                header("Location: ../Accountmaken.php?error=usernametaken");
             exit();
             }
             // als registratie correct gedaan is. Insert WERKT
@@ -110,7 +109,7 @@ elseif(isset($_POST['signup-sumbit'])) // hangt van de naam van submit af.
                     mysqli_stmt_execute($stmt);  
                     mysqli_stmt_close($stmt);
                     mysqli_close($conn);
-                    header("Location: ../registreer.php?signup=succes");
+                    header("Location: ../Accountmaken.php?signup=succes");
                     exit();
 
                 }
