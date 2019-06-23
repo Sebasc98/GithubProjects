@@ -6,7 +6,7 @@ if(isset($_POST['activatiecode-submit']))
    require 'dbh.inc.php';
    
     $activationcode = $_POST['activationcode'];
-    // check of leeg is of verkeerde datatype(werkt)
+    // check of leeg is of verkeerde datatype
 
     if (empty($activationcode))
     {
@@ -14,7 +14,7 @@ if(isset($_POST['activatiecode-submit']))
         exit();
     }
 
-    else // check of query klopt (werkt)
+    else // check of query klopt 
     {    
         $sql = "SELECT * FROM activationcode
         WHERE Code = ?;";
@@ -26,8 +26,8 @@ if(isset($_POST['activatiecode-submit']))
             exit();
         }
 
-        // als query  klopt dan 
-        else 
+       
+        else  // als query  klopt dan 
         {
             //placeholder invullen  
             mysqli_stmt_bind_param($stmt,'s',$activationcode);

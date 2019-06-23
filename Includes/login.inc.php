@@ -25,7 +25,8 @@ if(isset($_POST['login']))// hangt van login knop af
         $stmt=mysqli_stmt_init($conn);
 
          // check of query klopt
-        if(!mysqli_stmt_prepare($stmt, $sql)){
+        if(!mysqli_stmt_prepare($stmt, $sql))
+        {
             header("Location: ../inlog.php?error=sqlerror");
             exit();
         }
