@@ -53,19 +53,11 @@ if(isset($_POST['login']))// hangt van login knop af
                 {
                     // alle userinfo 
                     $_SESSION['UserID'] = $row['Userid'];
-                    $_SESSION['Username'] = $row['Username'];
-                    $_SESSION['Voornaam'] = $row['Firstname'];
-                    $_SESSION['Achernaam'] = $row['Lastname'];
-                    $_SESSION['Geboortedatum'] = $row['DateOfBirth'];
+                    require 'Userinfo.inc.php'; // script dat alle informatie over de user opslaat in sessie variabelen.
                     
                     header('Location: ../fakedashboardclient.php');        
                 }
 
-                
-           
-
-           
-           
             }
             //username fout
             else
