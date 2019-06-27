@@ -39,6 +39,120 @@ $_SESSION['signuptype']='Client'
             <span class="focus-input100-2"></span>
             </div>
           </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <p>Mail</p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid Geboortedatum is needed">
+            <input class="input100" type="text" name="Mail" placeholder="Mail">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <p>Voornaam</p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid Geboortedatum is needed">
+            <input class="input100" type="text" name="Voornaam" placeholder="Voornaam">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <p>Tussenvoegsel</p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid Geboortedatum is needed">
+            <input class="input100" type="text" name="Tussenvoegsel" placeholder='Tussenvoegsel'>
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <p>Initialen</p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid Geboortedatum is needed">
+            <input class="input100" type="text" name="Initialen" placeholder='Initialen'>
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <p>Achternaam</p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid Voornaam is needed">
+            <input class="input100" type="text" name="Achternaam" placeholder="Achternaam">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <p>Geboortedatum</p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid Geboortedatum is needed">
+            <input class="input100" type="date" name="Geboortedatum" placeholder="Geboortedatum">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <p>Telefoonnummer</p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid Telefoonnummer is needed">
+            <input class="input100" type="var" name="Telefoonnummer" placeholder="Telefoonnummer">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <p>Straat</p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid Telefoonnummer is needed">
+            <input class="input100" type="var" name="Straat" placeholder="Straat">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <p>Nummer</p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid Telefoonnummer is needed">
+            <input class="input100" type="var" name="Nummer" placeholder="Nummer">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <p>Postcode</p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid Telefoonnummer is needed">
+            <input class="input100" type="var" name="Postcode" placeholder="Postcode">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <p>Woonplaats</p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid Telefoonnummer is needed">
+            <input class="input100" type="var" name="Woonplaats" placeholder="Woonplaats">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <p>Nationaliteit</p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid Telefoonnummer is needed">
+            <input class="input100" type="var" name="Nationaliteit" placeholder="Nationaliteit">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <p>Burgerlijke staat</p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid Telefoonnummer is needed">
+            <input class="input100" type="var" name="BurgerlijkeStaat" placeholder="Burgerlijke staat">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <p>In instelling?</p>
+              <div class="input-group mb-3">
+        <div class="input-group-prepend">
+        </div>
+        <select class="custom-select" id="inputGroupSelect01" name='Instelling'>
+          <option selected>Kies...</option>
+          <option value="2">Ja</option> 
+          <option value="3">Nee</option>
+           
          
         </select>
       </div>
@@ -47,7 +161,7 @@ $_SESSION['signuptype']='Client'
       </div>
 </div>
 					<div class="container-login100-form-btn m-t-20">
-						<button class="login100-form-btn" type='submit' name='signup-submit'>
+						<button class="login100-form-btn" type='submit' name='signupclient-submit'>
 							Ga verder
 						</button>
 					</div>
