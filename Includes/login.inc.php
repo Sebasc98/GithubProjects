@@ -52,10 +52,22 @@ if(isset($_POST['login']))// hangt van login knop af
                 elseif($wachtwoord == $row['Wachtwoord'])
                 {
                     // alle userinfo 
-                    $_SESSION['UserID'] = $row['Userid'];
-                    require 'Userinfo.inc.php'; // script dat alle informatie over de user opslaat in sessie variabelen.
                     
-                    header('Location: ../fakedashboardclient.php');        
+                    if($row['Access'] == 'Client')
+                    {
+                        $_SESSION['ClientID'] = $row['Userid'];
+                        header('Location: ../fakedashboardclient.php');     
+                        exit();
+                    }
+
+                    else
+                    {
+                        $_SESSION['UserID'] = $row['Userid'];
+                        header('Location: ../fakeuserdashboard.php');
+                        exit();
+                    } 
+                     
+                    
                 }
 
             }

@@ -64,5 +64,3 @@ $SESSION['clientid'];
         mysqli_stmt_close($stmt);
 		header("Location: ../nieuwticket.php?nieuwdossier=succes"); //deze nog ff updaten!!
 		echo($viewticket);
-	
-	

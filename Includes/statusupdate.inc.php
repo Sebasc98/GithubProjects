@@ -3,7 +3,6 @@
 // BIJ HET MAKEN VAN EEN NIEUWE CLIENT MOETEN ALLE STATUS'SEN DEFAULT OP 
 // DEEL 2 : SCRIPT VOOR BEWERKEN/UPLOADEN STATUS (EDIT)
 // 
-
 // 1 -- HET LADEN VAN DE STATUS, NODIG OP DE CLIENT PAGINA
 session_start();
 require 'dbh.inc.php';
@@ -28,7 +27,6 @@ require 'dbh.inc.php';
 		header("Location: ../fakedashboardclient.php"); //deze nog ff updaten!!
 		echo($viewstatus); // deze print de troep zegmaar als html
 							// voor nu dus alleen 0 of 1 op het scherm en nog geen kruis of uitroepteken!
-
 // 2 -- HET BEWERKEN VAN DE STATUS (ALLE VELDEN MOETEN INGEVULD ZIJN!!!)
 if(isset($_POST['statusupdate-submit']))
 {
@@ -68,6 +66,5 @@ if(isset($_POST['statusupdate-submit']))
         mysqli_stmt_close($stmt);
 		header("Location: ../statusupdate.php?bijgewerktestatus=succes"); //deze nog ff updaten!!		
 }
-	
 	
 	
