@@ -157,7 +157,7 @@ elseif(isset($_POST['signup-submit2'])) // dit is voor de accountmaken form
          {
              echo 'SQL statement failed.';
          }
-         else //, 
+         else  
          {
             mysqli_stmt_bind_param($stmt,'ssii', $_SESSION['username'], $_SESSION['password'], $id, $_SESSION['activatiecodeid'] );
             mysqli_stmt_execute($stmt);  

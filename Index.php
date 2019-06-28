@@ -1,7 +1,6 @@
-<?php
+<?php 
 require 'header.php'
 ?>
-
 <div id="home">
   <div class="Welkom">
     <div class="container">
@@ -17,19 +16,19 @@ require 'header.php'
     <div class="container">
       <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <a href="inlog.php"><button type="button"  class="btn" id="id1"></button></a>
+          <a href="inlog.php"><button type="button" class="btn" id="id1"></button></a>
           <h4>Client</h4>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <a href="inlog.php"><button type="button"  class="btn" id="id2"></button></a>
+          <a href="inlog.php"><button type="button" class="btn" id="id2"></button></a>
           <h4>Coach</h4>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <a href="inlog.php"><button type="button"  class="btn" id="id3"></button></a>
+          <a href="inlog.php"><button type="button" class="btn" id="id3"></button></a>
           <h4>Reclassering</h4>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <a href="inlog.php"><button type="button"  class="btn" id="id4"></button></a>
+          <a href="inlog.php"><button type="button" class="btn" id="id4"></button></a>
           <h4>Iemand anders</h4>
           </div>
 
@@ -44,15 +43,19 @@ require 'header.php'
     <div class="row">
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <h3>Over Ons</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non orci quam. Quisque neque lacus, fermentum vitae elit vel, eleifend molestie risus. Donec dapibus ultricies dolor vitae aliquet. Suspendisse id vulputate nunc. Aenean ultrices volutpat urna vitae rutrum. Morbi quis est eu enim sollicitudin dignissim. </p>
+        <p>Wij zijn 7 informatiekunde studenten die de opdracht kregen om informatiesysteem te maken die een sociaal probleem oplost. Wij hebben toen Intré geïntroduceerd. De naam is een woordspeling en een combinatie van de woorden re-integratie en entré. De naam van ons product houdt daarom een ​​directe..  <a href="overons.html">meer info</a></p>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <h3>Missie & Visie</h3>
-        <p>Aliquam volutpat ligula sed lacus tempus viverra a ut enim. Praesent mauris dolor, imperdiet quis viverra non, facilisis vel mauris. Donec sodales pulvinar sagittis. In elementum aliquam massa et hendrerit. Nulla molestie nisi et velit euismod, et sollicitudin tortor sagittis.</p>
+        <p>Wij willen ons inzetten voor het verbeteren van de reïntegratie van ex-gedetineerden door gebruikt te maken van een informatiesysteem (deze website). Wij willen dit bereiken door de de informatiestroom te verbeteren tussen alle partijen die bijdragen aan het re integratieproces.<a href="missie.html">meer info</a></p>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <h3>Contact</h3>
-        <p>Etiam laoreet sagittis sem sit amet volutpat. Quisque quis lacus pulvinar, rutrum lacus vel, iaculis elit. Quisque maximus id erat ut aliquet. In hac habitasse platea dictumst. Aliquam erat volutpat. In hac habitasse platea dictumst. Fusce ullamcorper mi dolor. Quisque porttitor consectetur lobortis. Vivamus at dictum sem.</p>
+        <p>Intré</p>
+        <p>+030 254 17 12</p>
+        <p>Utrecht</p>
+        <p>3554 VH</p>
+        <a href="contact.html">meer info</a>
       </div>
     </div>
 
@@ -65,7 +68,7 @@ require 'header.php'
       <div class="col-sm-4">
         <h3>contact us</h3>
         <br>
-        <h4>Our adress and contact info here</h4>
+        <h4>Our adress and contact info <a href="contact.html">here</a></h4>
       </div>
       <div class="col-sm-4">
         <h3>Connect</h3>
@@ -82,6 +85,6 @@ require 'header.php'
     </div>
 
 </footer>
-
+</span>
 </body>
 </html>

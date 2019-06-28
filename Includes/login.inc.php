@@ -56,14 +56,14 @@ if(isset($_POST['login']))// hangt van login knop af
                     if($row['Access'] == 'Client')
                     {
                         $_SESSION['ClientID'] = $row['Userid'];
-                        header('Location: ../fakedashboardclient.php');     
+                        header('Location: ../dashboard.php');     
                         exit();
                     }
 
                     else
                     {
                         $_SESSION['UserID'] = $row['Userid'];
-                        header('Location: ../fakeuserdashboard.php');
+                        header('Location: ../overzicht.php');
                         exit();
                     } 
                      
