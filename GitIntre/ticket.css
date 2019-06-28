@@ -1,0 +1,24 @@
+
+#ticket{
+  background-color: white;
+  padding: 0px;
+  text-align:center;
+  margin-top: 10%;
+  width: 40%;
+
+  margin-bottom: 0px;
+}
+h2 {color: #a90061;
+}
+
+.btn
+{
+  background-color: #01689b;
+  color: white;
+  width: 45%;
+  height: 110%;
+}
+
+html,body{
+  background-color: #E6E6E6;
+}

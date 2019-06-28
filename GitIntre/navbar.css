@@ -1,0 +1,63 @@
+html, body {
+  height: 100%;
+  Width: 100%;
+}
+hr {
+  width: 95%;
+}
+
+#navbar1 {
+  background-color: white;
+  color: black;
+  font-size: 1.5em;
+}
+
+#navbar2 {
+  Background-color: #01689b;
+
+}
+
+#navbar3 {
+  Background-color: #01689b;
+}
+#tabjes {
+padding-left: 20px;
+}
+#loguit {
+  text-align: right;
+  font-size: 0.7em;
+}
+
+.navbar {
+  font-size: 1.2em;
+  font-style: normal;
+  margin-bottom: 0px;
+}
+.navbar-brand {
+    min-height: 30px;
+
+}
+.navbar-default .navbar-nav li a {
+    color: #cdcdc1;
+    padding-right: 40px;
+}
+ .navbar-default .navbar-nav li a.active {
+    color: #FFF;
+}
+
+.form-control {
+  margin: 10px;
+  margin-right: 150px;
+  width: 80%;
+}
+
+
+.column {
+  float: left;
+  width: 33,33%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;

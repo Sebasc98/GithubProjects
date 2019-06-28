@@ -1,0 +1,81 @@
+html, body {
+  height: 100%;
+  Width: 100%;
+}
+
+.navbar {
+  Background-color: #01689b;
+  padding: 1% 0;
+  font-size: 1.2em;
+  font-style: normal;
+  margin-bottom: 0px;
+}
+.navbar-brand {
+    min-height: 40px;
+
+}
+.navbar-default .navbar-nav li a {
+    color: #cdcdc1;
+    padding-right: 40px;
+}
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active {
+    color: #FFF;
+}
+
+
+#home {
+
+}
+.jumbotron {
+ padding: 0px;
+ width: 100%;
+}
+
+#container1 {
+width: 20%;
+padding-bottom: 10%;
+padding-left: 40px;
+background-color: #D3D3D3;
+}
+#container2 {
+  width: 150%;
+  padding-left: 10px;
+  padding-right: 80px;
+
+}
+#container3 {
+  width: 104%;
+  position: absolute;
+  padding-top: 20px;
+  margin-left: 30%;
+  background-color: #D3D3D3;
+  text-align: center;
+  padding-bottom: 137%;
+}
+#inlineFormInputName2 {
+width: auto;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  color: #FFF
+}
+
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+color: #a90061;
+text-align: center;
+padding-bottom: 20px;
+}
+h5 {
+font-weight: bold;
+padding-top: 10px;
+}

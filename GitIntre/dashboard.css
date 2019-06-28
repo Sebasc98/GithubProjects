@@ -1,0 +1,40 @@
+body, html {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+h2 {
+color: #a90061;
+padding-top: 10px;
+
+}
+
+.dashboard {
+width: 100%;}
+
+.jumbotron {
+  padding: 5px;
+  background-color: white;
+
+}
+.container .jumbotron, .container-fluid .jumbotron {
+ padding: 0;
+
+}
+
+h5 {
+  font-weight: bold;
+}
+
+p {
+font-size: 1.0em;
+padding: 0;
+}
+
+.button {
+
+text-align: right;
+align-items: right;
+
+
+.container .jumbotron, .container-fluid .jumbotron  }
