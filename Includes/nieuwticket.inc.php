@@ -59,7 +59,7 @@ $SESSION['clientid'];
         {
             echo 'SQL statement failed.';
         }
-		mysqli_stmt_bind_param($stmt, 'i', $SESSION['clientid'];
+		mysqli_stmt_bind_param($stmt, 'i', $_SESSION['ClientID'];
 		mysqli_stmt_execute($stmt);  
         mysqli_stmt_close($stmt);
 		header("Location: ../nieuwticket.php?nieuwdossier=succes"); //deze nog ff updaten!!

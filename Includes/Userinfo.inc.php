@@ -51,17 +51,18 @@ else
             $_SESSION['Client_straat'] = $row['Street'];
             $_SESSION['Postcode']= $row['Zipcode'];
 
-            $stmt=mysqli_stmt_init($conn);
+            // Dit moet nog veranderd worden ik op de clienten pagina staat er een overzicht van relaties de query van mij is fout en moet gefixt worden
+            $sql = "SELECT User_Userid2 FROM relationship  WHERE User_Userid1=? AND RelationType = Coach;";
+            $stmt=mysqli_stmt_init($conn); 
+            
             if(!mysqli_stmt_prepare($stmt, $sql))
             {
                 echo 'SQL statement failed.';
             }
             
             else 
-            {   // Dit moet nog veranderd worden ik op de clienten pagina staat er een overzicht van relaties de query van mij is fout en moet gefixt worden
-                $sql = "SELECT User_Userid2 FROM relationship  WHERE User_Userid1=? AND [Type] = Coach;";
-                //placeholder invullen  
-                mysqli_stmt_bind_param($stmt,'i',$_SESSION['UserID']); // nog veranderen in client id
+            {   
+                mysqli_stmt_bind_param($stmt,'i',$_SESSION['ClientID']); 
                 mysqli_stmt_execute($stmt);  
                 $result = mysqli_stmt_get_result($stmt);
                 if ($row = mysqli_fetch_assoc($result))
@@ -69,14 +70,23 @@ else
                 $coachid = $row['User_Userid2'];
                 }
                 $sql ='SELECT Firstname FROM user WHERE Userid = ?;';
-                mysqli_stmt_bind_param($stmt,'i',$coachid); // 
-                mysqli_stmt_execute($stmt);  
-                $result = mysqli_stmt_get_result($stmt);
-                // username en wachtwoord controleren
-                if ($row = mysqli_fetch_assoc($result))
+                $stmt=mysqli_stmt_init($conn); 
+                if(!mysqli_stmt_prepare($stmt, $sql))
                 {
-                $_SESSION['Client_Coach'] = $row['Firstname'];
+                    echo 'SQL statement failed.';
                 }
+                else
+                {
+                    mysqli_stmt_bind_param($stmt,'i',$coachid); // 
+                    mysqli_stmt_execute($stmt);  
+                    $result = mysqli_stmt_get_result($stmt);
+                    // username en wachtwoord controleren
+                    if ($row = mysqli_fetch_assoc($result))
+                    {
+                    $_SESSION['Client_Coach'] = $row['Firstname'];
+                    }
+                }
+                
             }
             
             // code voor bestanden tonen
