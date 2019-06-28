@@ -1,7 +1,5 @@
 <?php
 // Script die alle informatie van de client uit de db haalt, dus persoonlijke gegevens, bestanden tickets....
-// De Sessievariabele klopt nog niet ik moet uitzoeken hoe je meteen een sessie variabele kan aanmaken nadat er op de link van de client gedrukt is maar
-// voordat de gebruiker naar de pagina verwezen wordt. 
 require 'dbh.inc.php';
 $sql = "SELECT * FROM user LEFT JOIN adres ON user.Userid= adres.User_Userid
 WHERE Userid=?;";
@@ -51,7 +49,7 @@ else
             $_SESSION['Client_straat'] = $row['Street'];
             $_SESSION['Postcode']= $row['Zipcode'];
 
-            // Dit moet nog veranderd worden ik op de clienten pagina staat er een overzicht van relaties de query van mij is fout en moet gefixt worden
+            /* QUERY WERKT NIET
             $sql = "SELECT User_Userid2 FROM relationship  WHERE User_Userid1=? AND RelationType = Coach;";
             $stmt=mysqli_stmt_init($conn); 
             
@@ -87,7 +85,7 @@ else
                     }
                 }
                 
-            }
+            }*/
             
             // code voor bestanden tonen
 

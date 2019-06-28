@@ -16,11 +16,9 @@ if(isset($_POST['nieuwticket-submit']))
 	$aancoach = $_POST['coachid'];
 	// Bericht
 	$ticketbericht = $_POST['ticketbericht'];
-	// Afkomstig van (DE INGELOGDE GEBRUIKER)
-	$SESSION['userid'];
 	
 	//check of de velden leeg zijn, zo ja geef foutmelding
-	if (empty($tickettitel || $aancoach || ticketbericht)
+	if (empty($tickettitel) || empty($aancoach) || empty($ticketbericht))
 	{
 		header("Location: ../nieuwticket.php?error=emptyfieldsorWrongDatatype");
 		exit();
@@ -38,7 +36,7 @@ if(isset($_POST['nieuwticket-submit']))
 			{
             echo 'SQL statement failed.';
 			}
-			mysqli_stmt_bind_param($stmt, 'ssii', $tickettitel, $ticketbericht, $aancoach, $SESSION['userid'];
+			mysqli_stmt_bind_param($stmt, 'ssii', $tickettitel, $ticketbericht, $aancoach, $_SESSION['UserID']);
 			mysqli_stmt_execute($stmt);  
 			mysqli_stmt_close($stmt);
 			header("Location: ../nieuwticket.php?nieuwdossier=succes");
@@ -59,7 +57,7 @@ $SESSION['clientid'];
         {
             echo 'SQL statement failed.';
         }
-		mysqli_stmt_bind_param($stmt, 'i', $_SESSION['ClientID'];
+		mysqli_stmt_bind_param($stmt, 'i', $_SESSION['ClientID']);
 		mysqli_stmt_execute($stmt);  
         mysqli_stmt_close($stmt);
 		header("Location: ../nieuwticket.php?nieuwdossier=succes"); //deze nog ff updaten!!

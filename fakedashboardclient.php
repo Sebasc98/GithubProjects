@@ -7,6 +7,7 @@ if(isset($_GET['id']))
 }
 
 require 'Includes/Userinfo.inc.php'; // script dat alle informatie over de user opslaat in sessie variabelen.
+require 'Includes/statusupdate.inc.php';
 if(isset($_SESSION['ClientID'])){
     echo 'Ingelogd';
 }
